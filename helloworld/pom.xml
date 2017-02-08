@@ -76,7 +76,7 @@
     <repositories>
         <repository>
             <id>techpreview</id>
-            <url>http://maven.repository.redhat.com/nexus/content/groups/product-techpreview</url>
+            <url>http://maven.repository.redhat.com/techpreview/all/</url>
         </repository>
     </repositories>
 
