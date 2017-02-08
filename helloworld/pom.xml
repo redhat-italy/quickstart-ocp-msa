@@ -73,6 +73,13 @@
         </dependency>
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>techpreview</id>
+            <url>http://maven.repository.redhat.com/nexus/content/groups/product-techpreview</url>
+        </repository>
+    </repositories>
+
     <build>
         <!-- Set the name of the war, used as the context root when the app 
             is deployed -->

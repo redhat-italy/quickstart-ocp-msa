@@ -18,10 +18,12 @@ public class HelloWorld {
     @GET
     @Path("/json")
     @Produces({"application/json"})
-    public String getHelloWorldJSON(@QueryParam("name") @DefaultValue("World") String name) {
-        return getHelloWorldJSON("common-service", "8080", name);
+    public String getHelloWorldJSON(@QueryParam("name") @DefaultValue("World") String name) throws Exception {
+        return "{\"result\":\"" + helloProxyService.proxyHelloMessage(name) + "\"}";
+//        return getHelloWorldJSON("common-service", "8080", name);
     }
 
+/*
     @GET
     @Path("/json/{service}")
     @Produces({"application/json"})
@@ -52,5 +54,6 @@ public class HelloWorld {
     public String getHelloWorldSimple() {
         return "{\"result\":\"Hello Simple!\"}";
     }
+*/
 
 }

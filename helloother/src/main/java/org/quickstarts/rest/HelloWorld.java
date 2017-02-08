@@ -19,4 +19,4 @@ public class HelloWorld {
         return "{\"result\":\"" + helloService.createHelloMessage(name) + "\"}";
     }
 
-}
+}x
